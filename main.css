@@ -13,8 +13,6 @@
     box-sizing: border-box;
     margin: 0;
     font-family: 'Fira sans', 'sans-serif';
-    /* 임시방편 */
-    /* color: #FFF; */
 }
 
 body {
@@ -50,7 +48,7 @@ input, button {
 }
 
 #new-task-input {
-    flex: 1 1 0%;
+    flex: 1 1 0%; /*  */
     background-color: var(--darker);
     padding: 1rem;
     border-radius: 1rem;
@@ -68,8 +66,8 @@ input, button {
     font-size: 1.25rem;
     font-weight: 700;
     background-image: linear-gradient(to right, var(--pink), var(--purple));
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text; /* 텍스트 보이기 */
+    -webkit-text-fill-color: transparent; /* 그라데이션 효과 적용 */
     cursor: pointer;
     transition: 0.4s;
 }
@@ -85,7 +83,6 @@ input, button {
 
 .main {
     flex: 1 1 0%;
-    padding: 2rem 1rem;
     max-width: 800px;
     width: 100%;
     margin: 0 auto;
@@ -96,7 +93,7 @@ input, button {
 }
 
 .task-list h2 {
-    font-size: 2rem;
+    font-size: 1.75rem;
     font-weight: 300;
     color: var(--gray);
     margin-bottom: 1rem;
@@ -108,12 +105,12 @@ input, button {
     background-color: var(--darkest);
     padding: 1rem;
     border-radius: 1rem;
-    margin-bottom: 1rem;
+    margin-bottom: 1rem; /* 추가된 것과 거리두기 위함 */
 }
 
 #tasks .task .content {
-    flex: 1 1 0%;
-}
+    flex: 1 1 0%; /* 길게 입력한 내용이 중간에 짤림 방지 */
+} 
 
 #tasks .task .content .text{
     color:var(--light);
@@ -126,11 +123,6 @@ input, button {
 #tasks .task .content .text:not(:read-only) {
     color: var(--pink);
 }
-
-/* 임시방편 */
-/* .content .text {
-    font-size: 1.2rem;
-} */
 
 #tasks .task .actions {
     display: flex;

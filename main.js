@@ -10,7 +10,7 @@ window.addEventListener('load',()=> {
         
         const task = input.value;
         if (!task) {
-            alert("Please fill out the task");
+            alert("임무 퀘스트를 입력하지 않았습니다!");
             return;
         } 
 
